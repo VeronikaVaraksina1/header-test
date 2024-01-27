@@ -26,12 +26,12 @@ function changeActiveLink() {
   const homeLink = document.querySelector('.home');
 
   window.addEventListener('load', () => {
-    const currentPage = '.' + window.location.pathname;
+    const currentPage = window.location.pathname;
 
     links.forEach(link => {
       console.log(currentPage);
       console.log(window.location.pathname);
-      if (currentPage === './') {
+      if (currentPage === '/header-test/') {
         homeLink.classList.add('active-link');
       } else {
         if (link.getAttribute('href') === currentPage) {
