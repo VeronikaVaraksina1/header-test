@@ -29,6 +29,8 @@ function changeActiveLink() {
     const currentPage = '.' + window.location.pathname;
 
     links.forEach(link => {
+      console.log(currentPage);
+      console.log(window.location.pathname);
       if (currentPage === './') {
         homeLink.classList.add('active-link');
       } else {
