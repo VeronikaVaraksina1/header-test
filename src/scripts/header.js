@@ -31,6 +31,8 @@ function changeActiveLink() {
     links.forEach(link => {
       console.log(currentPage);
       console.log(window.location.pathname);
+      console.log(currentPage === '/header-test/');
+      console.log(link.getAttribute('href') === currentPage);
       if (currentPage === '/header-test/') {
         homeLink.classList.add('active-link');
       } else {
