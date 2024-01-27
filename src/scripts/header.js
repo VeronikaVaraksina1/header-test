@@ -27,7 +27,7 @@ function changeActiveLink() {
   window.addEventListener('load', () => {
     const currentPage = window.location.pathname;
 
-    if (currentPage.includes('index.html')) {
+    if (currentPage.includes('index.html') || currentPage == '/') {
       links[0].classList.add('active-link');
       links[2].classList.add('active-link');
     } else if (currentPage.includes('page-2.html')) {
@@ -37,48 +37,4 @@ function changeActiveLink() {
   });
 }
 
-// function changeActiveLink() {
-//   const links = document.querySelectorAll('.nav-link');
-//   const homeLink = document.querySelector('.home');
-
-//   window.addEventListener('load', () => {
-//     const currentPage = window.location.pathname;
-
-//     links.forEach(link => {
-//       if (currentPage.includes('index.html')) {
-//         link.classList.add('active-link');
-//       } else {
-//         homelink.forEach(link => {
-//           link.classList.add('active-link');
-//         });
-//       }
-//     });
-
-//     // console.log test
-//     // console.log(currentPage);
-//     // console.log(window.location.pathname.includes('index.html'));
-//     // console.log(currentPage === '/header-test/');
-//     // console.log(link.getAttribute('href') === currentPage);
-//   });
-// }
-
 changeActiveLink();
-
-// function changeActiveLink() {
-//   const links = document.querySelectorAll('.nav-link');
-//   const homeLink = document.querySelector('.home');
-
-//   window.addEventListener('load', () => {
-//     const currentPage = window.location.href;
-
-//     links.forEach(link => {
-//       if (currentPage === 'https://veronikavaraksina1.github.io/header-test/') {
-//         homeLink.classList.add('active-link');
-//       } else {
-//         if (link.getAttribute('href') === currentPage) {
-//           link.classList.add('active-link');
-//         }
-//       }
-//     });
-//   });
-// }
