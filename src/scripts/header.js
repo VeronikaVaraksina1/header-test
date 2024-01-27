@@ -30,6 +30,7 @@ function changeActiveLink() {
 
     links.forEach(link => {
       console.log(currentPage);
+      console.log(window.location.href);
       console.log(
         currentPage === 'https://veronikavaraksina1.github.io/header-test/'
       );
