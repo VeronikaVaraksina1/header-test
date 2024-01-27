@@ -26,14 +26,16 @@ function changeActiveLink() {
   const homeLink = document.querySelector('.home');
 
   window.addEventListener('load', () => {
-    const currentPage = window.location.pathname;
+    const currentPage = window.location.href;
 
     links.forEach(link => {
       console.log(currentPage);
-      console.log(window.location.pathname);
-      console.log(currentPage === '/header-test/');
+      console.log(
+        currentPage === 'https://veronikavaraksina1.github.io/header-test/'
+      );
       console.log(link.getAttribute('href') === currentPage);
-      if (currentPage === '/header-test/') {
+
+      if (currentPage === 'https://veronikavaraksina1.github.io/header-test/') {
         homeLink.classList.add('active-link');
       } else {
         if (link.getAttribute('href') === currentPage) {
