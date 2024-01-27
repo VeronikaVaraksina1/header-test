@@ -28,7 +28,7 @@ function changeActiveLink() {
     const currentPage = window.location.pathname;
     console.log(currentPage);
 
-    if (currentPage.includes('index.html') || currentPage === '/header-test/') {
+    if (currentPage.includes('index.html') || currentPage == '/header-test/') {
       links[0].classList.add('active-link');
       links[2].classList.add('active-link');
     } else if (currentPage.includes('page-2.html')) {
